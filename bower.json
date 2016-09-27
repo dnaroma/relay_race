@@ -1,0 +1,22 @@
+{
+  "name": "relaylogistic",
+  "description": "demo relay logistic app",
+  "main": "index.js",
+  "authors": [
+    "DNARoma <tangpei506@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Framework7": "framework7#^1.4.2",
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.6.3"
+  }
+}

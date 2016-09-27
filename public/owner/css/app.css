@@ -1,0 +1,5 @@
+.icon { /* Customizes all icons at once */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}

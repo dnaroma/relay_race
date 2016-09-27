@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>Relay Logistic</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="/bower_components/Framework7/dist/css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="/bower_components/Framework7/dist/css/framework7.ios.colors.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Views -->
+    <div class="views tabs toolbar-through">
+      <!-- Main View -->
+      <div id="main-view" class="view view-main tab active">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding">Relay Logistic</div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <div class="content-block">
+                <h2>Welcome Back, User2 </h2>
+                <h3>You have 0 packages on the way</h3>
+                <h3>1 package is avaliable for you to relay</h3>
+              </div>
+
+                <div class="content-block-title">Latest</div>
+                <div class="list-block accordion-list media-list">
+                  <ul>
+                    <li class="accordion-item"><a href="#" class="item-content item-link">
+                      <div class="item-media"><img src="/resource/00048d9f.png" width="80"></div>
+                        <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Package #2</div>
+                        </div>
+                        <div class="item-subtitle">Hannover</div>
+                        <div class="item-text">From Stuttgart</div>
+                      </div></a>
+                      <div class="accordion-item-content">
+                        <div class="content-block">
+                          <p>Current taker: Hannover central</p>
+                          <p>You can help to relay this package!</p>
+                          <a href="package2.html">See detail...</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second view (for second wrap)-->
+      <div id="package-view" class="view tab">
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">Packages</div>
+          </div>
+        </div>
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+            <div class="page-content">
+              <div class="content-block">
+                <p>You have currently taken <b>1</b> package.</p>
+              </div>
+              <div class="list-block media-list">
+                <ul>
+                    <li><a href="package2.taken.html" class="item-content item-link">
+                      <div class="item-media"><img src="/resource/00048d9f.png" width="80"></div>
+                        <div class="item-inner">
+                        <div class="item-title-row">
+                          <div class="item-title">Package #2</div>
+                          <div class="item-after">Hannover</div>
+                        </div>
+                        <div class="item-subtitle">Benz Shop</div>
+                        <div class="item-text">Next taker: You</div>
+                      </div></a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="#main-view" class="tab-link active">
+            <i class="icon fa fa-home fa-2x"></i><span class="tabbar-label">Home</span>
+          </a>
+          <a href="#package-view" class="tab-link">
+            <i class="icon fa fa-briefcase fa-2x"></i><span class="tabbar-label">Package</span>
+          </a>
+          <a href="#view-3" class="tab-link">
+            <i class="icon fa fa-inbox fa-2x"><span class="badge bg-red">1</span></i><span class="tabbar-label">Notifications</span>
+          </a>
+          <a href="#view-4" class="tab-link">
+          <i class="icon fa fa-user fa-2x"></i><span class="tabbar-label">Profile</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="/bower_components/Framework7/dist/js/framework7.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="script/app.js"></script>
+  </body>
+</html>

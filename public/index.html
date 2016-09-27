@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relay Logistic Demo</title>
+    <style>
+        .left {
+            width: 600px;
+            height: 600px;
+            float: left;
+            background-image: url("/resource/iphone.png");
+            background-size: 600px;
+        }
+        .left iframe {
+            margin-left: 166px;
+            margin-top: 67px;
+            width: 268px;
+            height: 470px;
+        }
+        .right {
+            width: 600px;
+            height: 600px;
+            background-image: url("/resource/iphone.png");
+            float:left;
+            background-size: 600px;
+        }
+        .right iframe {
+            margin-left: 166px;
+            margin-top: 67px;
+            width: 268px;
+            height: 470px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="left owner">
+        <iframe src="/owner/" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="right taker">
+        <iframe src="/taker/" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </body>
+</html>
